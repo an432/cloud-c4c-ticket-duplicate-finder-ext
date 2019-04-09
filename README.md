@@ -436,28 +436,6 @@ In this section we will enable the Duplicate Ticket Finder Widget in SAP Cloud f
 
 You should now have the application completely configured and working.
 
-## Configure OData Event Notifications for Creation of Tickets in SAP Cloud for Customer
-
-This allows automatic indexing of new tickets upon receiving them in the system.
-
-1. In SAP Cloud for Customer HTML5 interface choose *ADMINISTRATOR > GENERAL SETTINGS* tab and open the *OData Feed Notification to External System* screen.
-
-   ![OData Feed Notification](./src/main/resources/images/ODataEventNotifications.png)
-
-2. Choose *Add Row* to add a new subscription and follow the instructions:
-    - In the newly created row, enter a name for your subscription, for example **ticketfinder Subscription** .
-    - Set the *Consumer Endpoint* to the location of *Notification Service* endpoint provided by your application home page.
-    - As an *Authentication Type* choose *Basic* and enter a random user & password. The application endpoint is not protected. **Don't close this window yet.**
-    - In the Subscriptions section add a row and set up the following subscription:
-       - Business Object Name - SERVICE_REQUEST
-       - OData Service - c4codata
-       - OData Collection - ServiceRequestCollection
-       - Event - C (Creation)(Choose *Create*)
-    - *Save* the subscription configuration
-
-   ![OData Feed Subscription](./src/main/resources/images/ODataEventNotificationSubscription.png)
-
-3. Test the subscription by creating a new Ticket in the *Service > Tickets* page and observe that the number of tickets in the application index increases.
 
 ## Point Of Interest in the Application Code
 
