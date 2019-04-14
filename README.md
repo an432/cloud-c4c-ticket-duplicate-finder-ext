@@ -113,12 +113,15 @@ The required interface type will be specified where appropriate.
 ## Configuring Service User for API Access in SAP Cloud for Customer
 
 You need to create in your SAP Cloud for Customer system a Business User with API Access and corresponding authorizations for OData API Access and Ticket processing work center.
-1. To set user access rights open *Administrator > General Settings > Business Users*. Select the user and open *Edit > Access Rights*. Ensure the following work centers are configured for the user:
+1. To set user access rights open *Administrator > General Settings > Business Users*. 
+
+2. Find your user (using e-mail) and open *Edit > Access Rights*. Ensure the following work centers are configured for the user:
 
    SEOD_TICKETMD_SADL_WCVIEW | Service | Tickets
-2. To set user authentication under *Administrator > General Settings > Business Users*. Select the user and open *Edit > Attributes*. From there select *Security Policy: S_BUSINESS_USER_WITHOUT_PASSWORD - Default Password Policy for Business Users with Single Sign-On*
+   
+3. To set user authentication under *Administrator > General Settings > Business Users*. Select the user and open *Edit > Attributes*. From there select *Security Policy: S_BUSINESS_USER_WITHOUT_PASSWORD - Default Password Policy for Business Users with Single Sign-On*
 
-3. Remember the user id in order to provide it during application installation (e.g. SERVICEUSER01)
+4. Remember the user id in order to provide it during application installation (e.g. SERVICEUSER01)
 
 ## Import and Build Duplicate Ticket Finder Application in Eclipse IDE
 
