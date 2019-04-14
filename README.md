@@ -115,7 +115,7 @@ The required interface type will be specified where appropriate.
 You need to create in your SAP Cloud for Customer system a Business User with API Access and corresponding authorizations for OData API Access and Ticket processing work center.
 1. To set user access rights open *Administrator > General Settings > Business Users*. 
 
-2. Find your user (using e-mail) and open *Edit > Access Rights*. Ensure the following work centers are configured for the user:
+2. Find your user (use search form and your p-user e-mail as a filter) and open *Edit > Access Rights*. Ensure the following work centers are configured for the user:
 
    SEOD_TICKETMD_SADL_WCVIEW | Service | Tickets
    
@@ -149,6 +149,11 @@ You need to create in your SAP Cloud for Customer system a Business User with AP
 
    ![Import Maven Project](./src/main/resources/images/SelectMavenProject.png) 
 9. From the project context menu, choose *Run As* > *Maven build*. Enter *clean install* in the *Goals* field and choose Run. 
+
+   ![Change Project Name](./src/main/resources/images/changeProject Name.png) 
+10. Open file ./resources/mtad.yaml. Change XX to your group number XX in the lines: 
+   "title: SAP Duplicate Tickets Finder XX" 
+   "ID: com.sap.cloud.c4c.ticket.duplicate.finder.XX"
 
    You should see a **BUILD SUCCESS** message in the Console view.
 
