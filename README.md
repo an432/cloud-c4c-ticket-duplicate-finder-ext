@@ -147,14 +147,13 @@ You need to create in your SAP Cloud for Customer system a Business User with AP
    ![Import Maven Project](./src/main/resources/images/ImportMavenProject.png) 
 8. Browse and select the *Project Folder* where you have cloned the Git repository and choose *Finish*. Wait for the project to load.
 
-   ![Import Maven Project](./src/main/resources/images/SelectMavenProject.png) 
-9. From the project context menu, choose *Run As* > *Maven build*. Enter *clean install* in the *Goals* field and choose Run. 
-
-   ![Change Project Name](./src/main/resources/images/changeProject Name.png) 
-10. Open file ./resources/mtad.yaml. Change XX to your group number XX in the lines: 
+   ![Change Project Name](./src/main/resources/images/changeProjectName.png) 
+9. Open file ./resources/mtad.yaml. Change XX to your group number XX in the lines: 
    "title: SAP Duplicate Tickets Finder XX" 
    "ID: com.sap.cloud.c4c.ticket.duplicate.finder.XX"
 
+   ![Import Maven Project](./src/main/resources/images/SelectMavenProject.png) 
+10. From the project context menu, choose *Run As* > *Maven build*. Enter *clean install* in the *Goals* field and choose Run. 
    You should see a **BUILD SUCCESS** message in the Console view.
 
    ![Build Maven Project](./src/main/resources/images/MavenBuild.png)
