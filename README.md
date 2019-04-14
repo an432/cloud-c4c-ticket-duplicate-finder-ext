@@ -149,7 +149,7 @@ You need to create in your SAP Cloud for Customer system a Business User with AP
 
    ![Import Maven Project](./src/main/resources/images/SelectMavenProject.png) 
  
-9. Open file ./resources/mtad.yaml. Change XX to your group number XX in the lines:
+9. Open file ./resources/mtad.yaml. Change XX to your group number in the lines:
 
    "title: SAP Duplicate Tickets Finder XX" 
    "ID: com.sap.cloud.c4c.ticket.duplicate.finder.XX"
