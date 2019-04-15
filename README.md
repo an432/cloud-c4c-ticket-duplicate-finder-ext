@@ -152,7 +152,10 @@ You need to create in your SAP Cloud for Customer system a Business User with AP
 9. Open file ./resources/mtad.yaml. Change XX to your group number in the lines:
 
    "title: SAP Duplicate Tickets Finder XX" 
+   
    "ID: com.sap.cloud.c4c.ticket.duplicate.finder.XX"
+   
+   "name: ticketfinderXX"
 
 ![Change Project Name](./src/main/resources/images/changeProjectName.png) 
 10. From the project context menu, choose *Run As* > *Maven build*. Enter *clean install* in the *Goals* field and choose Run. 
